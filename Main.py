@@ -5,7 +5,7 @@ class Evaluate:
       size_of_stack: An integer which represents the size of stack.
       stack: A List which acts as a Stack.
   """
-
+    # Write your code here
 
 
   def __init__(self, size):
@@ -91,6 +91,7 @@ class Evaluate:
             result = ops[token](operand1, operand2)
             self.push(int(result))
     return self.stack[0]
+  
 # Do not change the following code
 postfix_expression = input()  # Read postfix expression
 tokens = postfix_expression.split()
