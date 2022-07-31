@@ -1,3 +1,4 @@
+import operator
 class Evaluate:
   """This class validates and evaluate postfix expression.
   Attributes:
@@ -91,6 +92,7 @@ class Evaluate:
             result = ops[token](operand1, operand2)
             self.push(int(result))
     return self.stack[0]
+
   
 # Do not change the following code
 postfix_expression = input()  # Read postfix expression
